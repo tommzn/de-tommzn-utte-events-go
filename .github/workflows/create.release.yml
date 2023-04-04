@@ -1,0 +1,11 @@
+name: Protobuf Compile
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  compile-go:
+    uses:  tommzn/github-ci/.github/workflows/create.release.tag.yml@v1.0.52
+    secrets:
+      cr-pat: ${{ secrets.PUSH_TOKEN }}
