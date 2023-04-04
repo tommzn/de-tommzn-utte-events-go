@@ -6,6 +6,6 @@ on:
 
 jobs:
   compile-go:
-    uses:  tommzn/github-ci/.github/workflows/create.release.tag.yml@v1.0.52
+    uses:  tommzn/github-ci/.github/workflows/create.release.tag.yml@v1.0.53
     secrets:
       cr-pat: ${{ secrets.PUSH_TOKEN }}
